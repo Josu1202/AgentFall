@@ -175,3 +175,22 @@ generados; `.gitattributes` normaliza los saltos de linea.
 El workflow **Tests** esta configurado para ejecutarse al subir cambios y abrir
 pull requests, usando Python 3.12 y 3.13 en Windows y Linux. Tambien admite
 ejecucion manual desde la pestana **Actions**.
+
+## Prompt de desarrollo
+
+Build a Vampire Survivors-style action roguelite in Python with pygame. The game is a top-down survival loop: the player controls a character that moves automatically or by keyboard, enemies swarm from all sides, weapons fire on their own, and the player collects experience gems to level up and choose upgrades until the run ends.
+
+Requirements:
+
+- **Engine and language:** Python 3 with pygame. Structure the code into modules (game loop, entities, weapons, enemies, upgrades, UI, audio) so the project can grow. Include a `requirements.txt` and a short README explaining how to run it.
+- **Pixel art design:** Use a consistent low-resolution pixel art style scaled up with nearest-neighbor filtering. Generate or procedurally draw all sprites in code if no image assets are provided, using a limited, coherent color palette. Include the player, enemies, projectiles, gems, and a tileable background.
+- **Playable characters based on AI agents:** Create at least three selectable characters, each represented as a distinct AI agent archetype (for example: a Planner that gains bonus cooldown reduction, a Retriever that gains larger pickup range and drop luck, a Generator that fires stronger projectiles with a unique ability). Each character has a starting ability, a passive trait, and a unique active ability with a cooldown. Show each character's stats and abilities on the selection screen.
+- **Upgrades while playing:** When the player levels up, pause the action and show three randomly chosen upgrade cards drawn from weapons, passive stats, and character-specific upgrades. Weapons should evolve or gain levels. Upgrades must have clear, readable descriptions.
+- **Sound effects:** Add SFX for shooting, hits, enemy death, gem pickup, level up, player damage, and game over. Use pygame's mixer; if no audio files are supplied, generate simple waveform tones in code so the game runs with sound out of the box, and make the audio loader swappable for real files.
+- **Simple visual effects:** Include screen shake on heavy hits, hit flashes on enemies, particle bursts on enemy death, floating damage numbers, and a brief ability visual when an active ability triggers.
+- **Core loop and balance:** Enemies spawn at screen edges with difficulty scaling over time. Include a timer, a kill counter, a HUD with health and experience bars, and a game over screen showing run stats with a restart option. Keep frame rate stable at 60 FPS and use delta time for movement.
+- **Code quality:** Keep the code readable and commented where non-obvious. Make key values (speeds, spawn rates, upgrade weights, character stats) defined in a single configuration module so the game is easy to tune.
+
+Deliver the complete, runnable project as separate files with their paths, starting with the configuration module and main entry point, so I can run it immediately with `python main.py`.
+
+Includes a readme file with an agent.md
