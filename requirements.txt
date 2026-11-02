@@ -1,0 +1,4 @@
+# CPython 3.12 or 3.13; use the standard 64-bit build on Windows.
+# Install a prepared wheel instead of trying to compile SDL on unsupported Python versions.
+--only-binary=:all:
+pygame==2.6.1

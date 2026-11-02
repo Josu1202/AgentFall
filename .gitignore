@@ -1,0 +1,30 @@
+# Python caches and generated metadata
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+
+# Local interpreters, including the Windows environment used by the launcher
+.venv*/
+venv/
+env/
+.env
+.env.*
+
+# Generated builds, downloads and logs
+build/
+dist/
+*.zip
+*.log
+
+# Local editor / operating-system settings
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini
